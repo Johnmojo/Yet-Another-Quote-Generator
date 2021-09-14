@@ -1,0 +1,69 @@
+/*Body*/
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #444444;
+}
+
+/*Horizantal line*/
+.parent__hr {
+  border-top: 2px solid #444444;
+  width: 50px;
+  margin: 4rem 0;
+  opacity: 0.5;
+}
+
+/*Top section grid*/
+.parent__top {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  margin: 4rem;
+}
+
+/*Bottom section grid*/
+.parent__bottom {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-rows: 15vw;
+  margin: 4rem;
+  align-items: end;
+}
+
+/*Button*/
+.parent__title button {
+  margin-top: 1rem;
+  background-color: #444444;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  font-size: 1.15em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/*Button when hover*/
+.parent__title button:hover {
+  background-color: #2e2e2e;
+  transition: 0.5s;
+}
+
+/*Paragraph 1*/
+.parent__title h2 {
+  font-weight: 600;
+}
+
+/*Paragraph 2*/
+.parent__title p {
+  font-size: 1.15em;
+}
+
+/*Quote generated*/
+.parent__result h1 {
+  font-family: Georgia, serif;
+}
+
+/*Quote generated author*/
+#parent__historyTarget {
+  color: #a8a8a8;
+  line-height: 2em;
+  transition: 0.5 ease;
+}
