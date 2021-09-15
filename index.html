@@ -6,41 +6,39 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-
     <!--Top section grid-->
     <div class="parent__top">
+
         <!-- Title -->
         <div class="parent__title">
+            <div class="parent__hr"></div>
             <!--Introduction-->
             <h2>Yet Another Quote Generator</h2>
-            <p>Get started by clicking generate</p>
+        </div>
 
+        <!--Horizontal line-->
+        <div class="parent__result">
+            <!--Quote-->
+            <div class="parent__quoteTarget" placeholder="Enter name"></div>
+            <!--Author-->
+            <div class="parent__authorTarget"></div>
+            <div class="parent__history--dropdown">
+                <div class="parent__clear">Clear History</div>
+                <p class="parent__historyTarget"></p>
+                <!-- Saved Quotes -->
+            </div>
+        </div>
+
+        <div class="parent__title">
             <!--Button generate-->
             <button class="parent__button">
-                Generate
+                Generate a Quote
             </button>
-            <!--Horizontal line-->
-            <div class="parent__hr"></div>
-            <div class="parent__result">
-                <!--Quote-->
-                <div class="parent__quoteTarget" placeholder="Enter name"></div>
-                <!--Author-->
-                <div class="parent__authorTarget"></div>
-            </div>
-
         </div>
+    </div>
 
-        <!--Bottom section grid-->
-        <div class="parent__bottom">
-            <div class="parent__clear">
-                Clear
-            </div>
-            <!-- Saved Quotes -->
-            <p class="parent__historyTarget"></p>
-        </div>
-
-        <!--Linked JS script-->
-        <script src="script.js"></script>
+    <!--Linked JS script-->
+    <script src="script.js"></script>
 
 </body>
 

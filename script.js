@@ -5,7 +5,7 @@ Quote API - Credit to https://github.com/lukePeavey/quotable
 
 /------------------------------------------------------------*/
 
-const api_url = "https://api.quotable.io/random";
+const api_url = "https://api.quotable.io/random?maxLength=50";
 
 //Init global array to store quotes & authors
 let storeQuotes = [];
@@ -125,20 +125,21 @@ function checkLocalQuotes() {
 function clearBt() {
   parentFade();
   localStorage.clear(); //Clear local storage
+  checkLocalQuotes();
   storeQuotes = []; //Clear storeQuotes array
   retrivedQuotes = []; //Clear retrivedQuotes array
   storeAuthor = []; //Clear storeAuthor array
   document.querySelector(".parent__clear").classList.add("hidden"); //Add hidden class to hide after click
   historyTarget.innerHTML = storeQuotes.join("<br />"); //Display updated history - Insert a single line break
-  checkLocalQuotes();
+  loadingFade();
 }
 
 //Set a delay + animation
 function parentFade() {
-  parentTarget.style.animation = "none";
-  historyTarget.style.animation = "none";
+  parentTarget.style.animation = "anim-repeat-top 1s";
+  historyTarget.style.animation = "anim-repeat-bottom 2s";
   setTimeout(function () {
-    parentTarget.style.animation = "anim-repeat-top 0.5s";
-    historyTarget.style.animation = "anim-repeat-bottom 1s";
-  }, 1);
+    parentTarget.style.animation = "none";
+    historyTarget.style.animation = "none";
+  }, 2000);
 }
