@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Happy Quotes Generator</title>
+<title>Quotes Generator</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 
@@ -13,32 +13,34 @@
         <div class="parent__title">
             <!--Introduction-->
             <h2>Yet Another Quote Generator</h2>
-            <p>Press the generate key to generate some random quotes</p>
-            <div class="parent__result">
-                <!--Horizontal line-->
-                <div class="parent__hr"></div>
-                <!--Quote-->
-                <h1 id="parent__quoteTarget">Press the button below to generate a new quote</h1>
-                <!--Quote author-->
-                <p id="parent__authorTarget">Author will be shown here</p>
-            </div>
+            <p>Get started by clicking generate</p>
+
             <!--Button generate-->
-            <button id="parent__button">
+            <button class="parent__button">
                 Generate
             </button>
-        </div>
-    </div>
+            <!--Horizontal line-->
+            <div class="parent__hr"></div>
+            <div class="parent__result">
+                <!--Quote-->
+                <div class="parent__quoteTarget" placeholder="Enter name"></div>
+                <!--Author-->
+                <div class="parent__authorTarget"></div>
+            </div>
 
-    <!--Bottom section grid-->
-    <div class="parent__bottom">
-        <!-- Saved Quotes -->
-        <div class="parent__saved">
-            <p id="parent__historyTarget"></p>
         </div>
-    </div>
 
-    <!--Linked JS script-->
-    <script src="script.js"></script>
+        <!--Bottom section grid-->
+        <div class="parent__bottom">
+            <div class="parent__clear">
+                Clear
+            </div>
+            <!-- Saved Quotes -->
+            <p class="parent__historyTarget"></p>
+        </div>
+
+        <!--Linked JS script-->
+        <script src="script.js"></script>
 
 </body>
 

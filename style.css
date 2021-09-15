@@ -1,12 +1,13 @@
 /*Body*/
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  color: #444444;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 /*Horizantal line*/
 .parent__hr {
-  border-top: 2px solid #444444;
+  border-top: 2px solid #ffffff;
   width: 50px;
   margin: 4rem 0;
   opacity: 0.5;
@@ -23,26 +24,28 @@ body {
 .parent__bottom {
   display: grid;
   /* grid-template-columns: auto auto; */
-  grid-template-rows: 15vw;
-  margin: 4rem;
+  grid-template-rows: 2vw;
+  margin: 4rem 0;
   align-items: end;
 }
 
 /*Button*/
 .parent__title button {
   margin-top: 1rem;
-  background-color: #444444;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   border: none;
   padding: 15px 32px;
   font-size: 1.15em;
   transition: 0.5s;
   cursor: pointer;
+  border-radius: 35px;
 }
 
 /*Button when hover*/
 .parent__title button:hover {
-  background-color: #2e2e2e;
+  background-color: #ffffff;
+  color: #000000;
   transition: 0.5s;
 }
 
@@ -52,18 +55,67 @@ body {
 }
 
 /*Paragraph 2*/
-.parent__title p {
+.parent__authorTarget {
+  margin-top: 1rem;
   font-size: 1.15em;
 }
 
 /*Quote generated*/
-.parent__result h1 {
+.parent__quoteTarget {
   font-family: Georgia, serif;
+  font-size: 3em;
 }
 
 /*Quote generated author*/
-#parent__historyTarget {
-  color: #a8a8a8;
+.parent__historyTarget {
+  color: #7a7a7a;
   line-height: 2em;
-  transition: 0.5 ease;
+}
+
+/*Clear history button*/
+.parent__clear {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.parent__button[disabled] {
+  color: #5a5a5a;
+  background-color: #252525;
+}
+
+.parent__button[disabled]:hover {
+  color: #5a5a5a;
+  background-color: #252525;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes anim-repeat-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes anim-repeat-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
 }
