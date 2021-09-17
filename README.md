@@ -15,6 +15,10 @@ Inspirational, random, quote generator. [Demo site here](https://johnmojo.github
 1. `$ cd Yet-Another-Quote-Generator` - go inside the project directory, or in your respective file explorer.
 2. That's it, open `index.html` on your browser by just double-clicking on the file.
 
+# Documentation
+
+Here's how I made it with explanation in my [post](https://johnnychai.com/yet-another-quote-generator).
+
 # Credit
 
 API from lukePeavey - [Quotable](https://github.com/lukePeavey/quotable)
